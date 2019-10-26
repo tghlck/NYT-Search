@@ -1,80 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>NYT Search</title>
-<style>
-.jumbotron{
-    background: navy;
-    color: white;
-    font-weight: bold;
-    
-};
-</style>
+    <style>
+        .jumbotron {
+            background: navy;
+            color: white;
+            font-weight: bold;
+
+        }
+
+        ;
+    </style>
 
 </head>
+
 <body>
     <div class="container">
-       <div class="jumbotron jumbotron-fluid text-center">
-                <div class="container">
-                  <h1 class="display-4">New York Times Search</h1>
-                  <p class="lead"></p>
-                </div>
-              </div>
+        <div class="jumbotron jumbotron-fluid text-center">
+            <div class="container">
+                <h1 class="display-4">New York Times Search</h1>
+                <p class="lead"></p>
+            </div>
+        </div>
 
-              <div class="card">
-                    <div class="card-header">
-                      Search Parameters
-                    </div>
-                   
-                <!-- //// Input 1 - Search Term /// -->
+        <div class="card">
+            <div class="card-header">
+                Search Parameters
+            </div>
 
+            <!-- //// Input 1 - Search Term /// -->
+            <div class="container">
                 <label for="basic-url">Search Term: </label>
                 <div class="input-group mb-3">
-                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
                 </div>
-                
+
                 <!-- //// Input 2 - Number of records to retrieve - needs dropdown options /// -->
                 <label for="recordsRetrieve">Number of Records to Retrieve: </label>
-                    <div class="input-group mb-3" id=recordsRetrieve>
-                            <select class="custom-select" id="inputGroupSelect02">
-                              <option selected>Choose...</option>
-                              <option value="1">One</option>
-                              <option value="2">Two</option>
-                              <option value="3">Three</option>
-                            </select>
-                              
-                            </div>
-            
-             <!-- //// Input 3 - Start Year (Optional) /// -->
-             <label for="basic-url">Start Year (Optional): </label>
-             <div class="input-group mb-3">
-             <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-             </div>
-             
-            <!-- //// Input 4 - End Year /// -->
-            <label for="basic-url">End Year:  </label>
-            <div class="input-group mb-3">
-            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                <div class="input-group mb-3" id=recordsRetrieve>
+                    <select class="custom-select" id="inputGroupSelect02">
+                        <option selected>Choose...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+
+                </div>
+
+                <!-- //// Input 3 - Start Year (Optional) /// -->
+                <label for="basic-url">Start Year (Optional): </label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                </div>
+
+                <!-- //// Input 4 - End Year /// -->
+                <label for="basic-url">End Year: </label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                </div>
             </div>
-       
             <!--  //// Buttons -->
-
-            <button type="button" class="btn btn-primary">Search</button>
-            <button type="button" class="btn btn-danger">Clear Results</button>
-
-              </div>
-<br> 
-              <div class="card" style="width: 18rem;">
-                    <div class="card-header">
-                      Top Articles
-                    </div>
-                    <div> TOP ARTICLES GO HERE  </div>
-              </div>
+            <div class="container">
+                <button type="button" class="btn btn-primary">Search</button>
+                <button type="button" class="btn btn-danger">Clear Results</button>
             </div>
+        </div>
+        <br>
+        <div class="card">
+            <div class="card-header">
+                Top Articles
+            </div>
+            <div> TOP ARTICLES GO HERE </div>
+        </div>
+    </div>
     <script>
     //layout header - jumbotron? 
     //container - card, replace w/ inputs 
@@ -85,4 +90,5 @@
     </script>
 
 </body>
+
 </html>
